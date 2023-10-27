@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Row ,Spinner} from "react-bootstrap";
+import { Col,Row ,Spinner} from "react-bootstrap";
 import SingleCard from "./SingleCard";
 
 class MyHome extends Component {
@@ -10,7 +10,7 @@ class MyHome extends Component {
   };
 
   componentDidMount() {
-    fetch('https://www.omdbapi.com/?apikey=ee9ad7d1&s=killer')
+    fetch('https://www.omdbapi.com/?apikey=ee9ad7d1&s=Kill Bill')
       .then(response => {
         if (response.ok) {
           return response.json();
@@ -29,10 +29,13 @@ class MyHome extends Component {
   }
 
   render() {
+    const numberOfFilmsToShow = 6;
+    const filmsToShow = this.state.films.slice(0, numberOfFilmsToShow);
+
     return (
       <>
-        <div id="home3" className="d-flex justify-content-between">
-          <div className="d-flex">
+        <div id="home2-5" className="d-flex justify-content-between">
+          <div className="d-flex ">
             <h2 className="mb-4">TV Shows</h2>
             <div className="btn-group" role="group">
               <div className="dropdown ms-4 mt-1">
@@ -64,12 +67,14 @@ class MyHome extends Component {
       
         ): (
             <div>
-              <h1>Film Sui Killer:</h1>
-              <Row>
-                {this.state.films.map(film => (
-                  <SingleCard key={film.imdbID} title={film.Title} poster={film.Poster} />
-                ))}
-              </Row>
+              <h1>Kill Bill</h1>
+              <Row className="ms-1 me-1">
+              {filmsToShow.map((film) => (
+                <Col key={film.imdbID} md={2} className="mb-2 text-center px-1">
+                  <SingleCard poster={film.Poster} />
+                </Col>
+              ))}
+            </Row>
             </div>
           )}
         </div>

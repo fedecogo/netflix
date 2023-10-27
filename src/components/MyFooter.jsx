@@ -1,7 +1,7 @@
 const MyFooter = () => {
     return (
         <footer>
-        <div class="row justify-content-center mt-5">
+        <div class="ms-5 justify-content-center">
           <div class="col col-6">
             <div class="row">
               <div class="col mb-2">
@@ -18,31 +18,16 @@ const MyFooter = () => {
                 <div class="row">
                   <div class="col footer-links">
                     <p>
-                      <a href="#" alt="footer link">Audio and Subtitles</a>
+                      Audio and Subtitles
                     </p>
                     <p>
-                      <a href="#" alt="footer link">Media Center</a>
+                      Media Center
                     </p>
                     <p>
-                      <a href="#" alt="footer link">Privacy</a>
+                      Privacy
                     </p>
                     <p>
-                      <a href="#" alt="footer link">Contact us</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="row">
-                  <div class="col footer-links">
-                    <p>
-                      <a href="#" alt="footer link">Audio Description</a>
-                    </p>
-                    <p>
-                      <a href="#" alt="footer link">Investor Relations</a>
-                    </p>
-                    <p>
-                      <a href="#" alt="footer link">Legal Notices</a>
+                      Contact us
                     </p>
                   </div>
                 </div>
@@ -51,13 +36,28 @@ const MyFooter = () => {
                 <div class="row">
                   <div class="col footer-links">
                     <p>
-                      <a href="#" alt="footer link">Help Center</a>
+                      Audio Description
                     </p>
                     <p>
-                      <a href="#" alt="footer link">Jobs</a>
+                      Investor Relations
                     </p>
                     <p>
-                      <a href="#" alt="footer link">Cookie Preferences</a>
+                      Legal Notices
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="row">
+                  <div class="col footer-links">
+                    <p>
+                      Help Center
+                    </p>
+                    <p>
+                      Jobs
+                    </p>
+                    <p>
+                      Cookie Preferences
                     </p>
                   </div>
                 </div>
