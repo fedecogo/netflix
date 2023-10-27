@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import MyHome from './components/MyHome';
+import MyNavBar from './components/MyNavBar'
+import MyFooter from './components/MyFooter'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import MyHome2 from './components/MyHome2';
+import MyHome3 from './components/MyHome3';
+// import MyNavBar from './components/MyNavBar'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div >
+      <header >
+        <MyNavBar/>
       </header>
+      <main>
+        <MyHome3/>
+        <MyHome/>
+        <MyHome2/>
+
+      </main>
+      <MyFooter/>
     </div>
   );
 }

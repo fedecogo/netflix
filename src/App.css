@@ -36,3 +36,50 @@
     transform: rotate(360deg);
   }
 }
+
+
+.custom-alert {
+  background-color: #FF0000; 
+  color: white; 
+  padding: 10px; 
+  border-radius: 5px; 
+  margin: 10px; 
+}
+
+#home1{
+  
+    background-color: #121212; 
+    color: #fff; 
+  
+}
+#home2{
+  
+    background-color: #121212; 
+    color: #fff; 
+  
+}
+#home3{
+  
+    background-color: #121212; 
+    color: #fff; 
+  
+}
+
+#nav{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(to bottom, #000, #ff0000); 
+  padding: 10px 0;
+}
+
+.navbar-brand img {
+  max-height: 60px;
+}
+
+.nav-link {
+  color: #fff;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
