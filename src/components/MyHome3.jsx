@@ -34,7 +34,8 @@ class MyHome extends Component {
 
     return (
       <>
-        <div id="home2-5" className="d-flex justify-content-between">
+      <div className="mt-3">ciao</div>
+        <div id="home2-5" className="d-flex justify-content-between mt-5 ">
           <div className="d-flex ">
             <h2 className="mb-4">TV Shows</h2>
             <div className="btn-group" role="group">
