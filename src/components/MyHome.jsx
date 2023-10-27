@@ -46,7 +46,7 @@ class MyHome extends Component {
             <h1>Film sul Marte</h1>
             <Row className="ms-1 me-1">
               {filmsToShow.map((film) => (
-                <Col key={film.imdbID} md={2} className="mb-2 text-center px-1">
+                <Col key={film.imdbID}  md={4} xs={6}  className="mb-2 text-center px-1">
                   <SingleCard poster={film.Poster} />
                 </Col>
               ))}
